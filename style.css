@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background:url("images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+button:focus{
+    outline: none; 
+}
+button:hover{
+    cursor: pointer;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    padding: 20px 0;
+}
+.container{
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 6px;
+}
+nav ul li a{
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+nav ul li a:hover, a.active{
+    background-color: #3352F2;
+    border-radius: 5px;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 70px;
+    align-items: center;
+}
+.booking-form{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 5px;
+    float: left;
+}
+.booking-form h3{
+    margin: 10px 0px;
+}
+.booking-form  .input-group{
+    margin: 10px 0;
+}
+.f-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inp-width{
+    min-width: 300px;
+}
+.plus-minus-btn{
+    color: #3352F2;
+    font-size: 30px;
+    padding: 2px;
+    margin-top: 10px;
+    word-spacing: 20px;
+}
+.booking-form  .calculations{
+    margin: 10px 0;
+}
+.booking-form  .calculations p{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.booking-form input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #F3F5FF;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.booking-form .inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.booking-content{
+    color: #fff;
+    width: 80%;
+}
+.booking-content h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.btn-style{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background-color:  #3352F2;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.class__btn {
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    color: #6e6cf5;
+    padding: 0px .3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.modal{
+    background:rgba(0, 0, 0, 0.507);
+    position:fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.modal__content{
+    background-color: #fff;
+    max-width: 60%;
+    width: 800px;
+  position:relative;
+    min-height: 200px;
+    border-radius:1rem;
+ 
+}
+.modal__header{
+    background-color: rgb(60, 252, 188);
+    padding: 2rem;
+    color: #fff;
+    font-size:2rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.modal__header h2{
+    display: inline-block;
+    position: relative;
+}
+.close{
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -37px;
+    right: -39px;
+    color: #000;
+}
+.modal__body table{
+    border-collapse: collapse;
+}
+.modal__body{
+    width: 100%;
+    padding:3rem;
+    font-size:1.6rem;
+    font-weight: bolder;
+    background-color: rgb(253, 226, 152);
+
+}
+.modal__body td{
+    border:1px solid rgb(255, 255, 255);
+    width: 100%;
+    padding:1rem;  
+}
+.modal__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+}
+.invoiceBtn{
+    border:none;
+    background:#3CFCBC;
+    padding:1rem 2rem;
+    font-weight: bolder;
+    font-size:1.3rem;
+    border-radius: 1rem;
+}
