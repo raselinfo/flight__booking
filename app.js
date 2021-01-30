@@ -3,7 +3,7 @@ function handleTicketCount(id, isIncrease) {
     const ticketCount = getInputValue(id);
     const newTicketCount = getTicketNewCount(ticketCount, isIncrease);
     document.getElementById(id + "__class").value = newTicketCount;
-    calculateTotoal();
+    calculateTotal();
 }
 
 // Get input value
@@ -36,7 +36,7 @@ function ticketTotal(ticket, ticketNewCount) {
 }
 
 // Calculate total
-function calculateTotoal() {
+function calculateTotal() {
     const firstTicketCount = getInputValue("first");
     const economyTicketCount = getInputValue("economy");
     // Subtotal

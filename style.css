@@ -125,8 +125,6 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
-
-
 .class__btn {
     background: #fff;
     border: none;
@@ -137,7 +135,6 @@ nav ul li a:hover, a.active{
     cursor: pointer;
     transition: .5s;
 }
-
 .modal{
     background:rgba(0, 0, 0, 0.507);
     position:fixed;
